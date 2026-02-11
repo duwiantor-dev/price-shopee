@@ -425,8 +425,8 @@ def process_shopee_files(
 # =========================
 # UI
 # =========================
-st.set_page_config(page_title="Web App Update Harga", layout="wide")
-st.title("Web App Update Harga")
+st.set_page_config(page_title="Harga Shopee", layout="wide")
+st.title("Harga Shopee")
 
 col1, col2, col3 = st.columns(3)
 
@@ -494,4 +494,5 @@ if run:
             st.dataframe(issues_df, use_container_width=True)
 
     except Exception as e:
+
         st.error(str(e))
